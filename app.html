@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" href="./weather-svgrepo-com.svg" type="image/svg" sizes="32x32">
+    <title>Weather | App</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/28c246a274.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="./style.css">
+    
+</head>
+  <body>
+    <main class="box d-flex align-items-center mx-auto my-auto">
+      <!-- mobile frame -->
+        <div class="mobile-frame mx-auto">
+
+          <!-- user interface inside mobile -->
+            <div class="user-interface container px-0">
+
+
+              <!-- this is notch -->
+                <div class="notch"></div>
+
+                <!-- mobile header  -->
+                <header class="mobile-header d-flex align-items-center flex-column">
+                    <div class="location&notifications d-flex align-items-center justify-content-between px-2 w-100">
+                        <ion-icon class="text-white" name="location-sharp"></ion-icon>
+                        <p class="location mb-0 text-white">Kedla, Ramgarh, Jharkhand (825325)</p> 
+                        <ion-icon class="text-white" name="notifications-sharp"></ion-icon>
+                        <ion-icon class="text-white" name="cart-sharp"></ion-icon>
+                    </div>           
+                </header>
+                <!-- weather data container -->
+                <section class="container weather-data-container py-2 d-flex align-items-center justify-content-center">
+                    <article class="weather-sec w-100 d-flex flex-column my-1">
+                        <!-- searchbar -->
+                        <h3 class="search-by-city text-center">Search by City name</h3>
+                        <div class="search-bar d-flex align-items-center w-100 px-2">
+                            <div class="input-group">           
+                                <input type="text" class="form-control fw-bold fs-6" placeholder="City..">
+                                <button class="btn btn-outline-dark" type="button" id="search-btn">
+                                    <i class="fa fa-search" aria-hidden="true"></i>
+                                </button>
+                            </div>
+                        </div>  
+
+                        <!-- weather details by city -->
+                        
+                        <div class="weather-in-city w-100 px-2 my-3">
+                            <h1 class="city-name fw-bold fs-4 text-center"></h1>
+                        </div>
+                          <h2 class="fw-bold fs-2 text-center text-dark temp"></h2>
+                          <div class="text-center my-1">
+                            <span class="icon"></span>
+                            <span class="weather-conditions text-center"></span>
+                          </div>
+                        <p class="humidity text-center my-1"></p>
+                    </article>
+                    
+                </section>
+
+                <!-- mobile footer -->
+                <footer class="mob-footer w-100">
+                  <div class="home d-flex justify-content-between align-items-center">
+                    <div class="footer-nav-tab">
+                      <a href="#"><i class="fa-solid fa-house"></i></a>
+                      <h5 class="mb-0">Home</h5>
+                    </div>
+                    <div class="footer-nav-tab">
+                      <a href="#"><i class="fa-solid fa-user"></i></a>
+                      <h5 class="mb-0">Profile</h5>
+                    </div>
+                    <div class="footer-nav-tab">
+                      <a href="#"><img class="logo-home img-fluid" src="./weather-svgrepo-com.svg" alt=""></a>
+                      
+                    </div>
+                    <div class="footer-nav-tab">
+                      <a href="#"><i class="fa-solid fa-list-check"></i></a>
+                      <h5 class="mb-0">Follow List</h5>
+                    </div>
+                    <div class="footer-nav-tab">
+                      <a href="#"><i class="fa-solid fa-comment-dots"></i></a> 
+                      <h5 class="mb-0">Chat</h5>
+                    </div>
+                  </div>
+                </footer>
+            </div>
+        </div>
+    </main>
+    
+        <!-- scripts for icons -->
+        <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+        <script src="./index.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    </body>
+</html>
